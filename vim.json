@@ -1,167 +1,1136 @@
 {
-    "settings" : {
-        "HeadlineFont" : "Helvetica 20 bold",
-        "multiLineEntry" : false,
+    "settings": {
         "version": 1,
+        "schemaVersion": 1,
         "type": "plain"
     },
-    "entry" : [
-        "Shortcut",
-        "Description",
-        "Tag"
-    ],
-    "visible" : [
+    "visible": [
         "Shortcut",
         "Description"
     ],
-    "Linux" : [],
-    "Mac" : [],
-    "Windows" : [],
     "common": [
-        [":help keyword", "open help for keyword", ["Global"]],
-        [":saveas file", "save file as", ["Global"]],
-        [":close", "close current pane", ["Global"]],
-        ["K", "open man page for word under the cursor", ["Global"]],
-        ["h", "move cursor left", ["Cursor", "movement"]],
-        ["j", "move cursor down", ["Cursor", "movement"]],
-        ["k", "move cursor up", ["Cursor", "movement"]],
-        ["l", "move cursor right", ["Cursor", "movement"]],
-        ["H", "move to top of screen", ["Cursor", "movement"]],
-        ["M", "move to middle of screen", ["Cursor", "movement"]],
-        ["L", "move to bottom of screen", ["Cursor", "movement"]],
-        ["w", "jump forwards to the start of a word", ["Cursor", "movement"]],
-        ["W", "jump forwards to the start of a word (words can contain punctuation)", ["Cursor", "movement"]],
-        ["e", "jump forwards to the end of a word", ["Cursor", "movement"]],
-        ["E", "jump forwards to the end of a word (words can contain punctuation)", ["Cursor", "movement"]],
-        ["b", "jump backwards to the start of a word", ["Cursor", "movement"]],
-        ["B", "jump backwards to the start of a word (words can contain punctuation)", ["Cursor", "movement"]],
-        ["%", "move to matching character (default supported pairs: '()', '{}', '[]'", "use <code>:h matchpairs</code> in vim for more info)", ["Cursor", "movement"]],
-        ["0", "jump to the start of the line", ["Cursor", "movement"]],
-        ["^", "jump to the first non-blank character of the line", ["Cursor", "movement"]],
-        ["$", "jump to the end of the line", ["Cursor", "movement"]],
-        ["g_", "jump to the last non-blank character of the line", ["Cursor", "movement"]],
-        ["gg", "go to the first line of the document", ["Cursor", "movement"]],
-        ["G", "go to the last line of the document", ["Cursor", "movement"]],
-        ["5G", "go to line 5", ["Cursor", "movement"]],
-        ["fx", "jump to next occurrence of character x", ["Cursor", "movement"]],
-        ["tx", "jump to before next occurrence of character x", ["Cursor", "movement"]],
-        ["Fx", "jump to previous occurence of character x", ["Cursor", "movement"]],
-        ["Tx", "jump to after previous occurence of character x", ["Cursor", "movement"]],
-        [";", "repeat previous f, t, F or T movement", ["Cursor", "movement"]],
-        [",", "repeat previous f, t, F or T movement, backwards", ["Cursor", "movement"]],
-        ["}", "jump to next paragraph (or function/block, when editing code)", ["Cursor", "movement"]],
-        ["{", "jump to previous paragraph (or function/block, when editing code)", ["Cursor", "movement"]],
-        ["zz", "center cursor on screen", ["Cursor", "movement"]],
-        ["Ctrl + e", "move screen down one line (without moving cursor)", ["Cursor", "movement"]],
-        ["Ctrl + y", "move screen up one line (without moving cursor)", ["Cursor", "movement"]],
-        ["Ctrl + b", "move back one full screen", ["Cursor", "movement"]],
-        ["Ctrl + f", "move forward one full screen", ["Cursor", "movement"]],
-        ["Ctrl + d", "move forward 1/2 a screen", ["Cursor", "movement"]],
-        ["Ctrl + u", "move back 1/2 a screen", ["Cursor", "movement"]],
-        ["Insert mode", "inserting/appending text", ["Cursor", "movement"]],
-        ["i", "insert before the cursor", ["Cursor", "movement"]],
-        ["I", "insert at the beginning of the line", ["Cursor", "movement"]],
-        ["a", "insert (append) after the cursor", ["Cursor", "movement"]],
-        ["A", "insert (append) at the end of the line", ["Cursor", "movement"]],
-        ["o", "append (open) a new line below the current line", ["Cursor", "movement"]],
-        ["O", "append (open) a new line above the current line", ["Cursor", "movement"]],
-        ["ea", "insert (append) at the end of the word", ["Cursor", "movement"]],
-        ["Esc", "exit insert mode", ["Cursor", "movement"]],
-        ["r", "replace a single character", ["Editing"]],
-        ["J", "join line below to the current one with one space in between", ["Editing"]],
-        ["gJ", "join line below to the current one without space in between", ["Editing"]],
-        ["gwip", "reflow paragraph", ["Editing"]],
-        ["cc", "change (replace) entire line", ["Editing"]],
-        ["C", "change (replace) to the end of the line", ["Editing"]],
-        ["c$", "change (replace) to the end of the line", ["Editing"]],
-        ["ciw", "change (replace) entire word", ["Editing"]],
-        ["cw", "change (replace) to the end of the word", ["Editing"]],
-        ["s", "delete character and substitute text", ["Editing"]],
-        ["S", "delete line and substitute text (same as cc)", ["Editing"]],
-        ["xp", "transpose two letters (delete and paste)", ["Editing"]],
-        ["u", "undo", ["Editing"]],
-        ["Ctrl + r", "redo", ["Editing"]],
-        [".", "repeat last command", ["Editing"]],
-        ["v", "start visual mode, mark lines, then do a command (like y-yank)", ["Marking", "text", "visual"]],
-        ["V", "start linewise visual mode", ["Marking", "text", "visual"]],
-        ["o", "move to other end of marked area", ["Marking", "text", "visual"]],
-        ["Ctrl + v", "start visual block mode", ["Marking", "text", "visual"]],
-        ["O", "move to other corner of block", ["Marking", "text", "visual"]],
-        ["aw", "mark a word", ["Marking", "text", "visual"]],
-        ["ab", "a block with ()", ["Marking", "text", "visual"]],
-        ["aB", "a block with {}", ["Marking", "text", "visual"]],
-        ["ib", "inner block with ()", ["Marking", "text", "visual"]],
-        ["iB", "inner block with {}", ["Marking", "text", "visual"]],
-        ["Esc", "exit visual mode", ["Marking", "text", "visual"]],
-        [">", "shift text right", ["Visual"]],
-        ["<", "shift text left", ["Visual"]],
-        ["y", "yank (copy) marked text", ["Visual"]],
-        ["d", "delete marked text", ["Visual"]],
-        ["~", "switch case", ["Visual"]],
-        [":reg", "show registers content", ["Registers"]],
-        ["\"xy", "yank into register x", ["Registers"]],
-        ["\"xp", "paste contents of register x", ["Registers"]],
-        [":marks", "list of marks", ["Marks"]],
-        ["ma", "set current position for mark A", ["Marks"]],
-        ["`a", "jump to position of mark A", ["Marks"]],
-        ["y`a", "yank text to position of mark A", ["Marks"]],
-        ["qa", "record macro a", ["Macros"]],
-        ["q", "stop recording macro", ["Macros"]],
-        ["@a", "run macro a", ["Macros"]],
-        ["@@", "rerun last run macro", ["Macros"]],
-        ["yy", "yank (copy) a line", ["Cut", "paste"]],
-        ["2yy", "yank (copy) 2 lines", ["Cut", "paste"]],
-        ["yw", "yank (copy) the characters of the word from the cursor position to the start of the next word", ["Cut", "paste"]],
-        ["y$", "yank (copy) to end of line", ["Cut", "paste"]],
-        ["p", "put (paste) the clipboard after cursor", ["Cut", "paste"]],
-        ["P", "put (paste) before cursor", ["Cut", "paste"]],
-        ["dd", "delete (cut) a line", ["Cut", "paste"]],
-        ["2dd", "delete (cut) 2 lines", ["Cut", "paste"]],
-        ["dw", "delete (cut) the characters of the word from the cursor position to the start of the next word", ["Cut", "paste"]],
-        ["D", "delete (cut) to the end of the line", ["Cut", "paste"]],
-        ["d$", "delete (cut) to the end of the line", ["Cut", "paste"]],
-        ["x", "delete (cut) character", ["Cut", "paste"]],
-        [":w", "write (save) the file, but don't exit", ["Exiting"]],
-        [":w !sudo tee %", "write out the current file using sudo", ["Exiting"]],
-        [":wq or :x or ZZ", "write (save) and quit", ["Exiting"]],
-        [":q", "quit (fails if there are unsaved changes)", ["Exiting"]],
-        [":q! or ZQ", "quit and throw away unsaved changes", ["Exiting"]],
-        [":wqa", "write (save) and quit on all tabs", ["Exiting"]],
-        ["/pattern", "search for pattern", ["Search", "replace"]],
-        ["?pattern", "search backward for pattern", ["Search", "replace"]],
-        ["\\vpattern", "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)", ["Search", "replace"]],
-        ["n", "repeat search in same direction", ["Search", "replace"]],
-        ["N", "repeat search in opposite direction", ["Search", "replace"]],
-        [":%s/old/new/g", "replace all old with new throughout file", ["Search", "replace"]],
-        [":%s/old/new/gc", "replace all old with new throughout file with confirmations", ["Search", "replace"]],
-        [":noh", "remove highlighting of search matches", ["Search", "replace"]],
-        [":vimgrep /pattern/ {file}", "search for pattern in multiple files", ["Search", "multiple", "files"]],
-        [":cn", "jump to the next match", ["Search", "multiple", "files"]],
-        [":cp", "jump to the previous match", ["Search", "multiple", "files"]],
-        [":copen", "open a window containing the list of matches", ["Search", "multiple", "files"]],
-        [":e file", "edit a file in a new buffer", ["multiple", "files"]],
-        [":bnext or :bn", "go to the next buffer", ["multiple", "files"]],
-        [":bprev or :bp", "go to the previous buffer", ["multiple", "files"]],
-        [":bd", "delete a buffer (close a file)", ["multiple", "files"]],
-        [":ls", "list all open buffers", ["multiple", "files"]],
-        [":sp file", "open a file in a new buffer and split window", ["multiple", "files"]],
-        [":vsp file", "open a file in a new buffer and vertically split window", ["multiple", "files"]],
-        ["Ctrl + ws", "split window", ["multiple", "files"]],
-        ["Ctrl + ww", "switch windows", ["multiple", "files"]],
-        ["Ctrl + wq", "quit a window", ["multiple", "files"]],
-        ["Ctrl + wv", "split window vertically", ["multiple", "files"]],
-        ["Ctrl + wh", "move cursor to the left window (vertical split)", ["multiple", "files"]],
-        ["Ctrl + wl", "move cursor to the right window (vertical split)", ["multiple", "files"]],
-        ["Ctrl + wj", "move cursor to the window below (horizontal split)", ["multiple", "files"]],
-        ["Ctrl + wk", "move cursor to the window above (horizontal split)", ["multiple", "files"]],
-        [":tabnew or :tabnew file", "open a file in a new tab", ["Tabs"]],
-        ["Ctrl + wT", "move the current split window into its own tab", ["Tabs"]],
-        ["gt or :tabnext or :tabn", "move to the next tab", ["Tabs"]],
-        ["gT or :tabprev or :tabp", "move to the previous tab", ["Tabs"]],
-        ["#gt", "move to tab number #", ["Tabs"]],
-        [":tabmove #", "move current tab to the #th position (indexed from 0)", ["Tabs"]],
-        [":tabclose or :tabc", "close the current tab and all its windows", ["Tabs"]],
-        [":tabonly or :tabo", "close all tabs except for the current one", ["Tabs"]],
-        [":tabdo command", "run the command on all tabs (e.g. :tabdo q", "closes all opened tabs)", ["Tabs"]]
-    ]
+        {
+            "title": ":help keyword",
+            "description": "open help for keyword",
+            "tags": [
+                "Global"
+            ]
+        },
+        {
+            "title": ":saveas file",
+            "description": "save file as",
+            "tags": [
+                "Global"
+            ]
+        },
+        {
+            "title": ":close",
+            "description": "close current pane",
+            "tags": [
+                "Global"
+            ]
+        },
+        {
+            "title": "K",
+            "description": "open man page for word under the cursor",
+            "tags": [
+                "Global"
+            ]
+        },
+        {
+            "title": "h",
+            "description": "move cursor left",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "j",
+            "description": "move cursor down",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "k",
+            "description": "move cursor up",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "l",
+            "description": "move cursor right",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "H",
+            "description": "move to top of screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "M",
+            "description": "move to middle of screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "L",
+            "description": "move to bottom of screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "w",
+            "description": "jump forwards to the start of a word",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "W",
+            "description": "jump forwards to the start of a word (words can contain punctuation)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "e",
+            "description": "jump forwards to the end of a word",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "E",
+            "description": "jump forwards to the end of a word (words can contain punctuation)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "b",
+            "description": "jump backwards to the start of a word",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "B",
+            "description": "jump backwards to the start of a word (words can contain punctuation)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "%",
+            "description": "move to matching character (default supported pairs: '()', '{}', '[]'",
+            "tags": "use <code>:h matchpairs</code> in vim for more info)"
+        },
+        {
+            "title": "0",
+            "description": "jump to the start of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "^",
+            "description": "jump to the first non-blank character of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "$",
+            "description": "jump to the end of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "g_",
+            "description": "jump to the last non-blank character of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "gg",
+            "description": "go to the first line of the document",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "G",
+            "description": "go to the last line of the document",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "5G",
+            "description": "go to line 5",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "fx",
+            "description": "jump to next occurrence of character x",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "tx",
+            "description": "jump to before next occurrence of character x",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Fx",
+            "description": "jump to previous occurence of character x",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Tx",
+            "description": "jump to after previous occurence of character x",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": ";",
+            "description": "repeat previous f, t, F or T movement",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": ",",
+            "description": "repeat previous f, t, F or T movement, backwards",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "}",
+            "description": "jump to next paragraph (or function/block, when editing code)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "{",
+            "description": "jump to previous paragraph (or function/block, when editing code)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "zz",
+            "description": "center cursor on screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + e",
+            "description": "move screen down one line (without moving cursor)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + y",
+            "description": "move screen up one line (without moving cursor)",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + b",
+            "description": "move back one full screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + f",
+            "description": "move forward one full screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + d",
+            "description": "move forward 1/2 a screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Ctrl + u",
+            "description": "move back 1/2 a screen",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Insert mode",
+            "description": "inserting/appending text",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "i",
+            "description": "insert before the cursor",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "I",
+            "description": "insert at the beginning of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "a",
+            "description": "insert (append) after the cursor",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "A",
+            "description": "insert (append) at the end of the line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "o",
+            "description": "append (open) a new line below the current line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "O",
+            "description": "append (open) a new line above the current line",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "ea",
+            "description": "insert (append) at the end of the word",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "Esc",
+            "description": "exit insert mode",
+            "tags": [
+                "Cursor",
+                "movement"
+            ]
+        },
+        {
+            "title": "r",
+            "description": "replace a single character",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "J",
+            "description": "join line below to the current one with one space in between",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "gJ",
+            "description": "join line below to the current one without space in between",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "gwip",
+            "description": "reflow paragraph",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "cc",
+            "description": "change (replace) entire line",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "C",
+            "description": "change (replace) to the end of the line",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "c$",
+            "description": "change (replace) to the end of the line",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "ciw",
+            "description": "change (replace) entire word",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "cw",
+            "description": "change (replace) to the end of the word",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "s",
+            "description": "delete character and substitute text",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "S",
+            "description": "delete line and substitute text (same as cc)",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "xp",
+            "description": "transpose two letters (delete and paste)",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "u",
+            "description": "undo",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "Ctrl + r",
+            "description": "redo",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": ".",
+            "description": "repeat last command",
+            "tags": [
+                "Editing"
+            ]
+        },
+        {
+            "title": "v",
+            "description": "start visual mode, mark lines, then do a command (like y-yank)",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "V",
+            "description": "start linewise visual mode",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "o",
+            "description": "move to other end of marked area",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "Ctrl + v",
+            "description": "start visual block mode",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "O",
+            "description": "move to other corner of block",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "aw",
+            "description": "mark a word",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "ab",
+            "description": "a block with ()",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "aB",
+            "description": "a block with {}",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "ib",
+            "description": "inner block with ()",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "iB",
+            "description": "inner block with {}",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": "Esc",
+            "description": "exit visual mode",
+            "tags": [
+                "Marking",
+                "text",
+                "visual"
+            ]
+        },
+        {
+            "title": ">",
+            "description": "shift text right",
+            "tags": [
+                "Visual"
+            ]
+        },
+        {
+            "title": "<",
+            "description": "shift text left",
+            "tags": [
+                "Visual"
+            ]
+        },
+        {
+            "title": "y",
+            "description": "yank (copy) marked text",
+            "tags": [
+                "Visual"
+            ]
+        },
+        {
+            "title": "d",
+            "description": "delete marked text",
+            "tags": [
+                "Visual"
+            ]
+        },
+        {
+            "title": "~",
+            "description": "switch case",
+            "tags": [
+                "Visual"
+            ]
+        },
+        {
+            "title": ":reg",
+            "description": "show registers content",
+            "tags": [
+                "Registers"
+            ]
+        },
+        {
+            "title": "\"xy",
+            "description": "yank into register x",
+            "tags": [
+                "Registers"
+            ]
+        },
+        {
+            "title": "\"xp",
+            "description": "paste contents of register x",
+            "tags": [
+                "Registers"
+            ]
+        },
+        {
+            "title": ":marks",
+            "description": "list of marks",
+            "tags": [
+                "Marks"
+            ]
+        },
+        {
+            "title": "ma",
+            "description": "set current position for mark A",
+            "tags": [
+                "Marks"
+            ]
+        },
+        {
+            "title": "`a",
+            "description": "jump to position of mark A",
+            "tags": [
+                "Marks"
+            ]
+        },
+        {
+            "title": "y`a",
+            "description": "yank text to position of mark A",
+            "tags": [
+                "Marks"
+            ]
+        },
+        {
+            "title": "qa",
+            "description": "record macro a",
+            "tags": [
+                "Macros"
+            ]
+        },
+        {
+            "title": "q",
+            "description": "stop recording macro",
+            "tags": [
+                "Macros"
+            ]
+        },
+        {
+            "title": "@a",
+            "description": "run macro a",
+            "tags": [
+                "Macros"
+            ]
+        },
+        {
+            "title": "@@",
+            "description": "rerun last run macro",
+            "tags": [
+                "Macros"
+            ]
+        },
+        {
+            "title": "yy",
+            "description": "yank (copy) a line",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "2yy",
+            "description": "yank (copy) 2 lines",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "yw",
+            "description": "yank (copy) the characters of the word from the cursor position to the start of the next word",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "y$",
+            "description": "yank (copy) to end of line",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "p",
+            "description": "put (paste) the clipboard after cursor",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "P",
+            "description": "put (paste) before cursor",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "dd",
+            "description": "delete (cut) a line",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "2dd",
+            "description": "delete (cut) 2 lines",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "dw",
+            "description": "delete (cut) the characters of the word from the cursor position to the start of the next word",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "D",
+            "description": "delete (cut) to the end of the line",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "d$",
+            "description": "delete (cut) to the end of the line",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": "x",
+            "description": "delete (cut) character",
+            "tags": [
+                "Cut",
+                "paste"
+            ]
+        },
+        {
+            "title": ":w",
+            "description": "write (save) the file, but don't exit",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": ":w !sudo tee %",
+            "description": "write out the current file using sudo",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": ":wq or :x or ZZ",
+            "description": "write (save) and quit",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": ":q",
+            "description": "quit (fails if there are unsaved changes)",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": ":q! or ZQ",
+            "description": "quit and throw away unsaved changes",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": ":wqa",
+            "description": "write (save) and quit on all tabs",
+            "tags": [
+                "Exiting"
+            ]
+        },
+        {
+            "title": "/pattern",
+            "description": "search for pattern",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": "?pattern",
+            "description": "search backward for pattern",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": "\\vpattern",
+            "description": "'very magic' pattern: non-alphanumeric characters are interpreted as special regex symbols (no escaping needed)",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": "n",
+            "description": "repeat search in same direction",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": "N",
+            "description": "repeat search in opposite direction",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": ":%s/old/new/g",
+            "description": "replace all old with new throughout file",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": ":%s/old/new/gc",
+            "description": "replace all old with new throughout file with confirmations",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": ":noh",
+            "description": "remove highlighting of search matches",
+            "tags": [
+                "Search",
+                "replace"
+            ]
+        },
+        {
+            "title": ":vimgrep /pattern/ {file}",
+            "description": "search for pattern in multiple files",
+            "tags": [
+                "Search",
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":cn",
+            "description": "jump to the next match",
+            "tags": [
+                "Search",
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":cp",
+            "description": "jump to the previous match",
+            "tags": [
+                "Search",
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":copen",
+            "description": "open a window containing the list of matches",
+            "tags": [
+                "Search",
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":e file",
+            "description": "edit a file in a new buffer",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":bnext or :bn",
+            "description": "go to the next buffer",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":bprev or :bp",
+            "description": "go to the previous buffer",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":bd",
+            "description": "delete a buffer (close a file)",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":ls",
+            "description": "list all open buffers",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":sp file",
+            "description": "open a file in a new buffer and split window",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":vsp file",
+            "description": "open a file in a new buffer and vertically split window",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + ws",
+            "description": "split window",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + ww",
+            "description": "switch windows",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wq",
+            "description": "quit a window",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wv",
+            "description": "split window vertically",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wh",
+            "description": "move cursor to the left window (vertical split)",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wl",
+            "description": "move cursor to the right window (vertical split)",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wj",
+            "description": "move cursor to the window below (horizontal split)",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": "Ctrl + wk",
+            "description": "move cursor to the window above (horizontal split)",
+            "tags": [
+                "multiple",
+                "files"
+            ]
+        },
+        {
+            "title": ":tabnew or :tabnew file",
+            "description": "open a file in a new tab",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": "Ctrl + wT",
+            "description": "move the current split window into its own tab",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": "gt or :tabnext or :tabn",
+            "description": "move to the next tab",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": "gT or :tabprev or :tabp",
+            "description": "move to the previous tab",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": "#gt",
+            "description": "move to tab number #",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": ":tabmove #",
+            "description": "move current tab to the #th position (indexed from 0)",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": ":tabclose or :tabc",
+            "description": "close the current tab and all its windows",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": ":tabonly or :tabo",
+            "description": "close all tabs except for the current one",
+            "tags": [
+                "Tabs"
+            ]
+        },
+        {
+            "title": ":tabdo command",
+            "description": "run the command on all tabs (e.g. :tabdo q",
+            "tags": "closes all opened tabs)"
+        }
+    ],
+    "Linux": [],
+    "Mac": [],
+    "Windows": []
 }
