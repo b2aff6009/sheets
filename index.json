@@ -1,4 +1,12 @@
 [
-	"https://raw.githubusercontent.com/b2aff6009/sheets/main/vim.json",
-	"https://raw.githubusercontent.com/b2aff6009/sheets/main/vscode.json"
+	{
+		"author": "b2aff6009",
+		"name": "vim",
+		"url": "https://raw.githubusercontent.com/b2aff6009/sheets/main/vim.json"
+	},
+	{
+		"author": "b2aff6009",
+		"name": "vscode",
+		"url": "https://raw.githubusercontent.com/b2aff6009/sheets/main/vscode.json"
+	}
 ]
