@@ -1,0 +1,6 @@
+[2022-12-18 12:21:29.651] [INFO] Activating extension
+[2022-12-18 12:21:29.652] [INFO] Activation finished
+[2022-12-18 12:23:18.344] [INFO] Deactivating extension
+[2022-12-18 12:23:33.560] [INFO] Activating extension
+[2022-12-18 12:23:33.561] [INFO] Activation finished
+[2022-12-18 12:58:21.647] [INFO] Deactivating extension
