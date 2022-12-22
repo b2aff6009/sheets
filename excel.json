@@ -1,0 +1,313 @@
+{
+  "settings": {
+    "version": 1,
+    "schemaVersion": 1,
+    "type": "plain"
+  },
+  "common": [],
+  "Linux": [],
+  "Mac": [
+    {
+      "title": "Copy and paste in Excel",
+      "description": "Use Command+C to copy and Command+V to paste in Excel.",
+      "tags": ["excel", "shortcut", "copy", "paste"]
+    },
+    {
+      "title": "Undo in Excel",
+      "description": "Use Command+Z to undo the last action in Excel.",
+      "tags": ["excel", "shortcut", "undo"]
+    },
+    {
+      "title": "Save in Excel",
+      "description": "Use Command+S to save your work in Excel.",
+      "tags": ["excel", "shortcut", "save"]
+    },
+    {
+      "title": "Bold text in Excel",
+      "description": "Use Command+B to bold selected text in Excel.",
+      "tags": ["excel", "shortcut", "bold"]
+    },
+    {
+      "title": "Italicize text in Excel",
+      "description": "Use Command+I to italicize selected text in Excel.",
+      "tags": ["excel", "shortcut", "italic"]
+    },
+    {
+      "title": "Underline text in Excel",
+      "description": "Use Command+U to underline selected text in Excel.",
+      "tags": ["excel", "shortcut", "underline"]
+    },
+    {
+      "title": "Insert a new worksheet in Excel",
+      "description": "Use Command+Option+F11 to insert a new worksheet in Excel.",
+      "tags": ["excel", "shortcut", "new worksheet"]
+    },
+    {
+      "title": "Go to a specific cell in Excel",
+      "description": "Use Command+G and enter the cell reference to go to a specific cell in Excel.",
+      "tags": ["excel", "shortcut", "go to cell"]
+    },
+    {
+      "title": "Insert current date in Excel",
+      "description": "Use Command+; (semicolon) to insert the current date in Excel.",
+      "tags": ["excel", "shortcut", "insert date"]
+    },
+    {
+      "title": "Insert current time in Excel",
+      "description": "Use Command+Shift+; (semicolon) to insert the current time in Excel.",
+      "tags": ["excel", "shortcut", "insert time"]
+    },
+    {
+      "title": "Copy and paste in Excel",
+      "description": "Use Command+C to copy and Command+V to paste in Excel.",
+      "tags": ["excel", "shortcut", "copy", "paste"]
+    },
+    {
+      "title": "Undo in Excel",
+      "description": "Use Command+Z to undo the last action in Excel.",
+      "tags": ["excel", "shortcut", "undo"]
+    },
+    {
+      "title": "Save in Excel",
+      "description": "Use Command+S to save your work in Excel.",
+      "tags": ["excel", "shortcut", "save"]
+    },
+    {
+      "title": "Bold text in Excel",
+      "description": "Use Command+B to bold selected text in Excel.",
+      "tags": ["excel", "shortcut", "bold"]
+    },
+    {
+      "title": "Italicize text in Excel",
+      "description": "Use Command+I to italicize selected text in Excel.",
+      "tags": ["excel", "shortcut", "italic"]
+    },
+    {
+      "title": "Underline text in Excel",
+      "description": "Use Command+U to underline selected text in Excel.",
+      "tags": ["excel", "shortcut", "underline"]
+    },
+    {
+      "title": "Insert a new worksheet in Excel",
+      "description": "Use Command+Option+F11 to insert a new worksheet in Excel.",
+      "tags": ["excel", "shortcut", "new worksheet"]
+    },
+    {
+      "title": "Go to a specific cell in Excel",
+      "description": "Use Command+G and enter the cell reference to go to a specific cell in Excel.",
+      "tags": ["excel", "shortcut", "go to cell"]
+    },
+    {
+      "title": "Insert current date in Excel",
+      "description": "Use Command+; (semicolon) to insert the current date in Excel.",
+      "tags": ["excel", "shortcut", "insert date"]
+    },
+    {
+      "title": "Insert current time in Excel",
+      "description": "Use Command+Shift+; (semicolon) to insert the current time in Excel.",
+      "tags": ["excel", "shortcut", "insert time"]
+    },
+    {
+      "title": "Insert a hyperlink in Excel",
+      "description": "Use Command+K to insert a hyperlink in Excel.",
+      "tags": ["excel", "shortcut", "hyperlink"]
+    },
+    {
+      "title": "Toggle wrap text in Excel",
+      "description": "Use Command+Option+W to toggle wrap text in Excel.",
+      "tags": ["excel", "shortcut", "wrap text"]
+    },
+    {
+      "title": "Merge cells in Excel",
+      "description": "Use Command+Option+M to merge cells in Excel.",
+      "tags": ["excel", "shortcut", "merge cells"]
+    },
+    {
+      "title": "Unmerge cells in Excel",
+      "description": "Use Command+Option+U to unmerge cells in Excel.",
+      "tags": ["excel", "shortcut", "unmerge cells"]
+    },
+    {
+      "title": "Toggle formula view in Excel",
+      "description": "Use Command+Tilde (`) to toggle between formula view and value view in Excel.",
+      "tags": ["excel", "shortcut", "formula view"]
+    },
+    {
+      "title": "Format cells in Excel",
+      "description": "Use Command+1 to open the Format Cells dialog box in Excel.",
+      "tags": ["excel", "shortcut", "format cells"]
+    },
+    {
+      "title": "Conditional formatting in Excel",
+      "description": "Use Command+Shift+L to apply or remove a filter in Excel.",
+      "tags": ["excel", "shortcut", "conditional formatting"]
+    },
+    {
+      "title": "Data validation in Excel",
+      "description": "Use Command+Shift+A to open the Data Validation dialog box in Excel.",
+      "tags": ["excel", "shortcut", "data validation"]
+    },
+    {
+      "title": "Toggle gridlines in Excel",
+      "description": "Use Command+Asterisk (*) to toggle gridlines in Excel.",
+      "tags": ["excel", "shortcut", "gridlines"]
+    },
+    {
+      "title": "Toggle full screen in Excel",
+      "description": "Use Command+Shift+Enter to toggle full screen in Excel.",
+      "tags": ["excel", "shortcut", "full screen"]
+    }
+  ],
+  "Windows": [
+    {
+      "title": "Copy and paste in Excel",
+      "description": "Use Ctrl+C to copy and Ctrl+V to paste in Excel.",
+      "tags": ["excel", "shortcut", "copy", "paste"]
+    },
+    {
+      "title": "Undo in Excel",
+      "description": "Use Ctrl+Z to undo the last action in Excel.",
+      "tags": ["excel", "shortcut", "undo"]
+    },
+    {
+      "title": "Save in Excel",
+      "description": "Use Ctrl+S to save your work in Excel.",
+      "tags": ["excel", "shortcut", "save"]
+    },
+    {
+      "title": "Bold text in Excel",
+      "description": "Use Ctrl+B to bold selected text in Excel.",
+      "tags": ["excel", "shortcut", "bold"]
+    },
+    {
+      "title": "Italicize text in Excel",
+      "description": "Use Ctrl+I to italicize selected text in Excel.",
+      "tags": ["excel", "shortcut", "italic"]
+    },
+    {
+      "title": "Underline text in Excel",
+      "description": "Use Ctrl+U to underline selected text in Excel.",
+      "tags": ["excel", "shortcut", "underline"]
+    },
+    {
+      "title": "Insert a new worksheet in Excel",
+      "description": "Use Ctrl+Shift+F11 to insert a new worksheet in Excel.",
+      "tags": ["excel", "shortcut", "new worksheet"]
+    },
+    {
+      "title": "Go to a specific cell in Excel",
+      "description": "Use F5 and enter the cell reference to go to a specific cell in Excel.",
+      "tags": ["excel", "shortcut", "go to cell"]
+    },
+    {
+      "title": "Insert current date in Excel",
+      "description": "Use Ctrl+; (semicolon) to insert the current date in Excel.",
+      "tags": ["excel", "shortcut", "insert date"]
+    },
+    {
+      "title": "Insert current time in Excel",
+      "description": "Use Ctrl+Shift+; (semicolon) to insert the current time in Excel.",
+      "tags": ["excel", "shortcut", "insert time"]
+    },
+    {
+      "title": "Insert a new row in Excel",
+      "description": "Use Ctrl+Shift+plus sign (+) to insert a new row in Excel.",
+      "tags": ["excel", "shortcut", "new row"]
+    },
+    {
+      "title": "Insert a new column in Excel",
+      "description": "Use Ctrl+Shift+plus sign (+) while in a row number to insert a new column in Excel.",
+      "tags": ["excel", "shortcut", "new column"]
+    },
+    {
+      "title": "Delete a row in Excel",
+      "description": "Use Ctrl+minus sign (-) to delete a row in Excel.",
+      "tags": ["excel", "shortcut", "delete row"]
+    },
+    {
+      "title": "Delete a column in Excel",
+      "description": "Use Ctrl+minus sign (-) while in a row number to delete a column in Excel.",
+      "tags": ["excel", "shortcut", "delete column"]
+    },
+    {
+      "title": "Autofill in Excel",
+      "description": "Use the fill handle (a small square in the lower-right corner of a selected cell) to autofill data in Excel.",
+      "tags": ["excel", "shortcut", "autofill"]
+    },
+    {
+      "title": "AutoSum in Excel",
+      "description": "Use Alt+= (equal sign) to insert an AutoSum formula in Excel.",
+      "tags": ["excel", "shortcut", "autosum"]
+    },
+    {
+      "title": "Toggle absolute and relative references in Excel",
+      "description": "Use F4 to toggle between absolute and relative references in Excel formulas.",
+      "tags": ["excel", "shortcut", "absolute reference", "relative reference"]
+    },
+    {
+      "title": "Find in Excel",
+      "description": "Use Ctrl+F to open the Find function in Excel.",
+      "tags": ["excel", "shortcut", "find"]
+    },
+    {
+      "title": "Replace in Excel",
+      "description": "Use Ctrl+H to open the Replace function in Excel.",
+      "tags": ["excel", "shortcut", "replace"]
+    },
+    {
+      "title": "Insert a comment in Excel",
+      "description": "Use Shift+F2 to insert a comment in Excel.",
+      "tags": ["excel", "shortcut", "insert comment"]
+    },
+    {
+      "title": "Insert a hyperlink in Excel",
+      "description": "Use Ctrl+K to insert a hyperlink in Excel.",
+      "tags": ["excel", "shortcut", "hyperlink"]
+    },
+    {
+      "title": "Toggle wrap text in Excel",
+      "description": "Use Ctrl+Shift+W to toggle wrap text in Excel.",
+      "tags": ["excel", "shortcut", "wrap text"]
+    },
+    {
+      "title": "Merge cells in Excel",
+      "description": "Use Ctrl+Shift+M to merge cells in Excel.",
+      "tags": ["excel", "shortcut", "merge cells"]
+    },
+    {
+      "title": "Unmerge cells in Excel",
+      "description": "Use Ctrl+Shift+U to unmerge cells in Excel.",
+      "tags": ["excel", "shortcut", "unmerge cells"]
+    },
+    {
+      "title": "Toggle formula view in Excel",
+      "description": "Use Ctrl+` (grave accent) to toggle between formula view and value view in Excel.",
+      "tags": ["excel", "shortcut", "formula view"]
+    },
+    {
+      "title": "Format cells in Excel",
+      "description": "Use Ctrl+1 to open the Format Cells dialog box in Excel.",
+      "tags": ["excel", "shortcut", "format cells"]
+    },
+    {
+      "title": "Conditional formatting in Excel",
+      "description": "Use Ctrl+Shift+L to apply or remove a filter in Excel.",
+      "tags": ["excel", "shortcut", "conditional formatting"]
+    },
+    {
+      "title": "Data validation in Excel",
+      "description": "Use Ctrl+Shift+A to open the Data Validation dialog box in Excel.",
+      "tags": ["excel", "shortcut", "data validation"]
+    },
+    {
+      "title": "Toggle gridlines in Excel",
+      "description": "Use Ctrl+* (asterisk) to toggle gridlines in Excel.",
+      "tags": ["excel", "shortcut", "gridlines"]
+    },
+    {
+      "title": "Toggle full screen in Excel",
+      "description": "Use Alt+Shift+Enter to toggle full screen in Excel.",
+      "tags": ["excel", "shortcut", "full screen"]
+    }
+  ]
+}

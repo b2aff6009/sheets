@@ -1,6 +1,11 @@
 [
 	{
 		"author": "b2aff6009",
+		"name": "excel",
+		"url": "https://raw.githubusercontent.com/b2aff6009/sheets/main/excel.json"
+	},
+	{
+		"author": "b2aff6009",
 		"name": "vim",
 		"url": "https://raw.githubusercontent.com/b2aff6009/sheets/main/vim.json"
 	},
